@@ -1,0 +1,89 @@
+/* Botão */
+/* Estilo do botão */
+.btn {
+    display: inline-flex; /* Alinha elementos (imagem e texto) horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    background: #edc3c3;
+    border: 1px solid #F9E9E9;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px; /* Espaçamento entre o coração e o texto */
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+    background: #F16161;
+    transition: background 0.5s;
+}
+
+/* Estilo da imagem dentro do botão */
+.icon {
+    width: 20px; /* Largura do coração */
+    height: 20px; /* Altura do coração */
+}
+
+
+/* Centralização do botão */
+.center {
+    text-align: center;
+}
+
+/* Div para centralizar o botão */
+.fora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo da imagem */
+img {
+    width: 90%; /* A imagem ocupará 90% da largura da tela */
+    max-width: 1200px; /* Largura máxima */
+    margin: 20px auto; /* Espaço e centralização */
+    display: block;
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 14px; /* Reduz o tamanho do texto */
+        padding: 8px 20px; /* Ajusta o tamanho do botão */
+    }
+
+    img {
+        width: 95%; /* Aumenta a largura em telas menores */
+        margin: 10px auto;
+    }
+
+    .fora {
+        height: auto; /* Deixa altura flexível */
+        padding: 20px; /* Adiciona espaçamento em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 12px; /* Reduz mais o texto */
+        padding: 6px 15px; /* Ajusta o botão para telas muito pequenas */
+    }
+
+    img {
+        width: 100%; /* Ocupa toda a largura */
+        border-radius: 5px; /* Reduz os cantos arredondados */
+    }
+}
+/* Para centralizar um texto */
+.center-text {
+    text-align: center;
+}
+
